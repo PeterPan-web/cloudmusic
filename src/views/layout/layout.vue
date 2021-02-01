@@ -6,9 +6,7 @@
     <playlogin></playlogin>
     <playmenu></playmenu>
     <div class="content">
-      <keep-alive>
         <router-view></router-view>   
-      </keep-alive>
     </div>
   </div>
   <player></player>
@@ -47,6 +45,7 @@ import playlogin from './playlogin.vue';
   }
 
   .content{
+        height: calc(100% - 50px);
         flex: 1;
         overflow-y: auto;
       }

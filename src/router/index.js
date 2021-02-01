@@ -12,6 +12,7 @@ const find =()=>import('views/find/find.vue')
 const newmusic =()=>import('views/newmusic/newmusic.vue')
 const newmv =()=>import('views/newmv/newmv.vue')
 const recommend =()=>import('views/recommend/recommend.vue')
+const playlist =()=>import('views/playlist/playlist.vue')
 const routes = [
       {
       path:'',
@@ -28,6 +29,9 @@ const routes = [
     },
     { path: '/recommend', 
     component: recommend 
+    },
+    { path: '/playlist/:id', 
+    component: playlist 
     },
 ]
 

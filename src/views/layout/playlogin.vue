@@ -45,6 +45,7 @@ mounted (){
 
 <style lang="scss" scoped>
 .login{
+  z-index: 99;
     position: fixed;
     left: 50%;
     top: 50%;

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance =axios.create({
-    baseURL:'https://api.mtnhao.com/',//baseURL会在发送请求的时候拼接在url参数的前面
+    baseURL:'https://api.mtnhao.com',//baseURL会在发送请求的时候拼接在url参数的前面
     timeout:5000
 })
 
