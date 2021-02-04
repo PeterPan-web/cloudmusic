@@ -5,11 +5,22 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    currentSong:[],
     toglogin:false,
       // 全屏变量，标识当前是否为全屏状态
     fullscreen: false,
   },
   mutations: {
+    //添加歌曲
+    addSong(state,payload){
+      const res=state.currentSong.find(function (item) {
+        return item.id===payload.id
+      })
+      if (!res) {
+        state.currentSong.push(payload)
+      }
+      
+    },
     //改变login的显示
     changelogin(state){
       state.toglogin=!state.toglogin
@@ -44,6 +55,11 @@ export default new Vuex.Store({
     },
   },
   actions: {
+  },
+  getters: {
+    currentSong:state=>{
+      return state.currentSong
+    }
   },
   modules: {
   }

@@ -1,10 +1,10 @@
 <template>
   <el-dropdown trigger="click" placement="top">
     <div class="el-dropdown-link">
-      <i class="iconfont icon-liebiao"></i>
+      <slot name="btnlink"></slot>
     </div>
     <el-dropdown-menu slot="dropdown">
-      <slot></slot>
+      <slot name="btnmenu"></slot>
     </el-dropdown-menu>
   </el-dropdown>
 </template>
